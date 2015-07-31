@@ -19,3 +19,6 @@
 [submodule "modules/oembed"]
 	path = modules/oembed
 	url = https://github.com/distantnative/oembed.git
+[submodule "modules/purecss"]
+	path = modules/purecss
+	url = https://github.com/nchpmn/pure-release.git
