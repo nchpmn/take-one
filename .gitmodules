@@ -10,3 +10,6 @@
 [submodule "modules/default-plugins"]
 	path = modules/default-plugins
 	url = https://github.com/getkirby/plugins.git
+[submodule "modules/visual-markdown"]
+	path = modules/visual-markdown
+	url = https://github.com/jonasdoebertin/kirby-visual-markdown.git
