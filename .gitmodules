@@ -13,3 +13,6 @@
 [submodule "modules/visual-markdown"]
 	path = modules/visual-markdown
 	url = https://github.com/jonasdoebertin/kirby-visual-markdown.git
+[submodule "modules/relative-date"]
+	path = modules/relative-date
+	url = https://github.com/distantnative/relative-date.git
