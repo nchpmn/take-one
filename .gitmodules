@@ -16,3 +16,6 @@
 [submodule "modules/relative-date"]
 	path = modules/relative-date
 	url = https://github.com/distantnative/relative-date.git
+[submodule "modules/oembed"]
+	path = modules/oembed
+	url = https://github.com/distantnative/oembed.git
