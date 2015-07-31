@@ -7,3 +7,6 @@
 [submodule "modules/selector"]
 	path = modules/selector
 	url = https://github.com/storypioneers/kirby-selector.git
+[submodule "modules/default-plugins"]
+	path = modules/default-plugins
+	url = https://github.com/getkirby/plugins.git
