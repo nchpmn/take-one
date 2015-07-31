@@ -4,3 +4,6 @@
 [submodule "panel"]
 	path = panel
 	url = https://github.com/getkirby/panel.git
+[submodule "modules/selector"]
+	path = modules/selector
+	url = https://github.com/storypioneers/kirby-selector.git
