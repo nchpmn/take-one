@@ -9,7 +9,7 @@ fields:
     type: text
   text:
     label: Text
-    type: textarea
+    type: markdown
   photo:
     label: Featured Photo
     type: selector
