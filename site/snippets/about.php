@@ -1,7 +1,7 @@
 <section class="pure-g img-bg-parent">
-    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-4-6 img-bg" style="background-image:url(http://www.raindance.org/wp-content/uploads/film-set2-780x398.jpg)">
+    <div class="pure-u-1 pure-u-sm-1-2 img-bg" style="background-image:url(http://www.raindance.org/wp-content/uploads/film-set2-780x398.jpg)">
     </div>
-    <div class="pure-u-1 pure-u-md-1-2 offset-md-1-2 pure-u-lg-7-6 l-box">
+    <div class="pure-u-1 pure-u-sm-1-2 offset-sm-1-2 l-box-lg">
             <h1><?php echo $data->title() ?></h1>
             <?php echo $data->text()->kirbytext() ?>
     </div>
