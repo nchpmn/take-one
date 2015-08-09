@@ -48,7 +48,7 @@ html, button, input, select, textarea,
     width: 100%;
     position: relative;
     background-color: #f9f9f9; }
-.img-bg {     background-size: cover;
+.img-bg { background-size: cover;
     background-position: top center;
     height: 100%;
     overflow: hidden;
