@@ -1,0 +1,20 @@
+{
+  "vars": {},
+  "css": [
+    "type.less",
+    "grid.less",
+    "forms.less",
+    "buttons.less",
+    "responsive-utilities.less",
+    "navs.less",
+    "navbar.less",
+    "jumbotron.less",
+    "responsive-embed.less",
+    "close.less",
+    "dropdowns.less"
+  ],
+  "js": [
+    "scrollspy.js"
+  ],
+  "customizerUrl": "http://getbootstrap.com/customize/?id=69f590a4e8cea6d9189c"
+}
