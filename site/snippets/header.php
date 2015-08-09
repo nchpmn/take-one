@@ -14,3 +14,6 @@
 
 </head>
 <body>
+    <nav class="pure-menu pure-menu-horizontal">
+    
+    </nav>
