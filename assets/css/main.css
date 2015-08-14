@@ -4,34 +4,76 @@
   nathan@nchp.mn
 */
 
-/* ------- LAYOUT STYLES -------- */
+/* ---- BASE STYLES ---- */
+body {
+    line-height: 1.7em;
+    color: #666;
+    font-size: 13px;
+}
 
 
-
-/* -------- TYPOGRAPHY STYLES -------- */
-
-
-
-/* -------- MEDIA STYLES -------- */
-
-
-
-* {
+/* ---- LAYOUT STYLES ---- */
+.pure-g > div {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-/*
- * -- BASE STYLES --
- * Most of these are inherited from Base, but I want to change a few.
- */
-body {
-    line-height: 1.7em;
-    color: #7f8c8d;
-    font-size: 13px;
+nav {
+    background:#333;
+    padding: 0.5em;
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
 }
 
+.splash-container {
+    /* Mostly used on homepage, but can be reused elsewhere - just need to override the height */
+    background:#888;
+    z-index:1;
+    overflow:hidden;
+    /* The following styles are required for the "scroll-over" effect */
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    position:fixed !important;
+}
+.splash {
+    /* absolute center .splash within .splash-container */
+    width:80%;
+    height:50%;
+    margin:auto;
+    position:absolute;
+    top:100px; left: 0; bottom: 0; right: 0;
+    text-align:center;
+    text-transform:uppercase;
+}
+.splash-head {
+    /* The main header text */
+    font-size:2rem;
+    color:#fff;
+    padding:1em 1.6em;
+    font-weight:100;
+    border-radius:5px;
+    line-height:1em;
+}
+.splash-subhead {
+    /* The smaller subtitle */
+    color: white;
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+}
+
+
+.pad-box {
+    padding:1em;
+}
+.pad-box-lg {
+    padding:2em;
+}
+
+
+/* ---- TYPOGRAPHY STYLES ---- */
 h1,
 h2,
 h3,
@@ -39,30 +81,59 @@ h4,
 h5,
 h6,
 label {
-    color: #34495e;
+    color: #333;
 }
 
-.pure-img-responsive {
-    max-width: 100%;
-    height: auto;
+.center {
+    text-align:center;
 }
 
-/*
- * -- LAYOUT STYLES --
- * These are some useful classes which I will need
+.header-box {
+    border:3px solid #fff;
+    padding:0.5em 1em;
+}
+
+/* ---- MEDIA STYLES ---- */
+
+
+
+
+/* ---- BREAKPOINTS & MEDIA QUERIES ---- */
+@media screen and (min-width:35.5em) { /* .sm is the default size - this entire stylesheet is .sm */
+
+}
+
+@media screen and (min-width:48em) { /* .md size */
+    .splash-head {
+        font-size:4rem;
+    }
+}
+
+@media screen and (min-width:64em) { /* .lg size */
+
+}
+
+@media screen and (min-width:80em) { /* .xl size */
+    /*
+     * -- DESKTOP (AND UP) MEDIA QUERIES --
+     * On desktops and other large devices, we want to over-ride some
+     * of the mobile and tablet styles.
+     */
+    .splash-head {
+        /* Let's make the font-size even larger */
+        font-size:6rem;
+    }
+}
+
+
+
+/*================================================================================================
+ * -- BASE STYLES --
+ * Most of these are inherited from Base, but I want to change a few.
  */
-.l-box {
-    padding: 1em;
-}
 
-.l-box-lrg {
-    padding: 2em;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-}
 
-.is-center {
-    text-align: center;
-}
+
 
 
 
@@ -108,14 +179,7 @@ a.pure-button-primary {
  * I want to customize how my .pure-menu looks at the top of the page
  */
 
-.home-menu {
-    padding: 0.5em;
-    text-align: center;
-    box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
-}
-.home-menu {
-    background: #2d3e50;
-}
+
 .pure-menu.pure-menu-fixed {
     /* Fixed menus normally have a border at the bottom. */
     border-bottom: none;
@@ -123,21 +187,21 @@ a.pure-button-primary {
     z-index: 4;
 }
 
-.home-menu .pure-menu-heading {
+nav .pure-menu-heading {
     color: white;
     font-weight: 400;
     font-size: 120%;
 }
 
-.home-menu .pure-menu-selected a {
+nav .pure-menu-selected a {
     color: white;
 }
 
-.home-menu a {
+nav a {
     color: #6FBEF3;
 }
-.home-menu li a:hover,
-.home-menu li a:focus {
+nav li a:hover,
+nav li a:focus {
     background: none;
     border: none;
     color: #AECFE5;
@@ -149,47 +213,8 @@ a.pure-button-primary {
  * This is the blue top section that appears on the page.
  */
 
-.splash-container {
-    background: #1f8dd6;
-    z-index: 1;
-    overflow: hidden;
-    /* The following styles are required for the "scroll-over" effect */
-    width: 100%;
-    height: 88%;
-    top: 0;
-    left: 0;
-    position: fixed !important;
-}
 
-.splash {
-    /* absolute center .splash within .splash-container */
-    width: 80%;
-    height: 50%;
-    margin: auto;
-    position: absolute;
-    top: 100px; left: 0; bottom: 0; right: 0;
-    text-align: center;
-    text-transform: uppercase;
-}
 
-/* This is the main heading that appears on the blue section */
-.splash-head {
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    border: 3px solid white;
-    padding: 1em 1.6em;
-    font-weight: 100;
-    border-radius: 5px;
-    line-height: 1em;
-}
-
-/* This is the subheading that appears on the blue section */
-.splash-subhead {
-    color: white;
-    letter-spacing: 0.05em;
-    opacity: 0.8;
-}
 
 /*
  * -- CONTENT STYLES --
@@ -256,10 +281,10 @@ a.pure-button-primary {
 
     /* We can align the menu header to the left, but float the
     menu items to the right. */
-    .home-menu {
+    nav {
         text-align: left;
     }
-        .home-menu ul {
+        nav ul {
             float: right;
         }
 
@@ -275,9 +300,7 @@ a.pure-button-primary {
         height: 50%;
     }
 
-    .splash-head {
-        font-size: 250%;
-    }
+    
 
 
     /* We remove the border-separator assigned to .l-box-lrg */
@@ -285,16 +308,4 @@ a.pure-button-primary {
         border: none;
     }
 
-}
-
-/*
- * -- DESKTOP (AND UP) MEDIA QUERIES --
- * On desktops and other large devices, we want to over-ride some
- * of the mobile and tablet styles.
- */
-@media (min-width: 78em) {
-    /* We increase the header font size even more */
-    .splash-head {
-        font-size: 300%;
-    }
 }
